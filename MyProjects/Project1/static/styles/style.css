@@ -1,0 +1,252 @@
+#logo {float:left; margin:10px; width:100px; height:100px; border-radius: 0; padding:0;}
+.name {float:left; text-align: left; font-size:25pt; font-family:"DacikPush"; color:#b33803; font-weight: normal;}
+
+
+body {
+    /* display: flex;
+    flex-direction: column; */
+    background-color: black;
+    background-image: url(../images/мордор3.jpg);
+    background-attachment:fixed;
+    /* margin: 0; */
+    
+
+ }
+
+header
+{
+    background-color:rgba(0, 0, 0, 0.781); 
+    /* padding: 0px;  */
+    height:120px;
+    width:100%;
+}
+
+/* div.ns{
+    display: flex;
+    flex-direction: column;
+    width:100%
+} */
+/* div.ns div.table1_g{
+    flex:1;
+    order :0;
+} */
+
+div.t{
+    overflow:scroll;
+}
+
+/* div.ns div.links{
+    flex:1;
+    order :1;
+} */
+    
+nav{
+    background-color: #b33803;
+    border-radius: 10px;
+    /* margin-top:10px;
+    margin-bottom:10px; */
+    width: 100%;
+}
+/* nav ul{margin:0px} */
+nav ul li{
+    float:none;
+    /* padding : 0px; */
+    background-color: #b33803;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    list-style: none;
+    
+}
+nav ul li a{
+    font-family: 'DacikPush';
+    color:black;
+    text-decoration: none;
+    font-size: 18pt;
+    /* padding: 0px; */
+    font-weight: bold;
+
+    
+}
+
+/* div.ns h1{
+    text-align: center;
+} */
+
+div.content
+{
+    border-radius: 10px;
+    width:100%;
+    margin:0 auto;
+    font-family:'Rev';
+    font-weight: normal;
+    background-color: rgba(224, 177, 146, 0.671);
+}
+
+a{
+    color:black;
+}
+
+h1{
+    text-align: center;
+    /* padding-top: 20px;
+    padding-bottom: 0; */
+    font-size: 50pt;
+    font-family: "DacikPush";
+    font-weight: bold;
+}
+
+h2{
+    font-size: 30pt;
+    /* padding-left: 20px;
+    padding-top:0; */
+    
+    text-align: center;
+}
+
+p.first_t{
+    font-size: 20pt;
+    /* padding-left: 20px; */
+}
+
+img{
+    border-radius: 10px;
+    border-color: black;
+    /* padding: 10px;  */
+    background-color: black;
+}
+
+table {
+    /* order: -1;
+    padding: 0px; */
+    text-align: center;
+    border-collapse: separate;
+    border-spacing: 2px;
+    background-color:rgb(0, 0, 0);
+    max-width: 100%;
+    /* display: flex; */
+}
+
+.sau{ width:250px; display: flex;
+
+}
+
+tr{
+    background-color:rgb(224, 177, 146);
+}
+
+footer {
+    font-size: 20pt;
+    font-family:"Rev" ;
+    color : #b33803;
+    background-color: #0000007a;
+    width:100%;
+}
+
+a:hover {
+    color: rgb(255, 176, 57);
+}
+
+tr.tb{
+    background-color: #b15b36;
+}
+
+/* form{
+    padding-left: 20px;
+} */
+
+/* label{
+    padding-bottom: 20px;
+} */
+.nametb{ background-color:#cea18db2}
+/* .kn{ padding-bottom: 20px;} */
+#ex:hover {color:black}
+
+@media screen and (min-width: 800px) {
+    body {
+        display:flex;
+        flex-direction: column;
+    }
+    header{margin-bottom:10px;}
+    nav ul li{
+        float:left;
+        /* padding : 2px; */
+        background-color: #b33803;
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+        list-style: none;
+        
+        
+    }
+    nav ul{margin:0;}
+    nav{
+        position: absolute;
+        top:0;
+        left: 60%;
+        background-color:#ffffff00;
+        margin:0 auto;
+        width:fit-content;
+        display:flex;
+    }
+    nav ul li a{
+        font-family: 'DacikPush';
+        color:black;
+        text-decoration: none;
+        font-size: 18pt;
+        /* padding: 10px; */
+        font-weight: bold;
+    }
+    /* div.ns{
+        max-width:1200px;
+    } */
+    /* div.ns div.table1_g{
+        flex:1;
+        order :1;
+        width:960px;
+    } */
+    div.t{
+        overflow:unset;
+    }
+    div.ns div.links{
+        flex:1;
+        order :0;
+    }
+    .lnks{order:1;}
+    .t1{order:2}
+    /* div.ns h1{
+        margin:0 auto;
+    } */
+    div.content{
+    max-width:90%;
+    display:flex;
+    flex-direction: column;
+    /* margin-top:10px; */
+    }
+    .rediv{
+        text-align: center;
+        margin:auto
+    }
+    div.header{
+        width:100%;
+    }
+    #sau
+    {
+        width:auto;
+
+    }
+}
+
+@font-face {
+    font-family: "Rev";
+    src: url("../fonts/arturito.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "DacikPush";
+    src: url("../fonts/DacikPush.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
