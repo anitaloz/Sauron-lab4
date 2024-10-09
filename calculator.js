@@ -10,19 +10,19 @@ function click1(event) {
     let s = document.getElementsByName("select1");
     if (isNumber(f1[0].value)) {
         if (s[0].value === "chocolate") {
-            r.innerHTML = f1[0].value * 80;
+            r.innerHTML = parseInt(f1[0].value) * 80;
         }
         if (s[0].value === "milk") {
-            r.innerHTML = f1[0].value * 67;
+            r.innerHTML = parseInt(f1[0].value) * 67;
         }
         if (s[0].value === "bread") {
-            r.innerHTML = f1[0].value * 30;
+            r.innerHTML = parseInt(f1[0].value) * 30;
         }
         if (s[0].value === "juice") {
-            r.innerHTML = f1[0].value * 109;
+            r.innerHTML = parseInt(f1[0].value) * 109;
         }
         if (s[0].value === "tea") {
-            r.innerHTML = f1[0].value * 94;
+            r.innerHTML = parseInt(f1[0].value) * 94;
         }
     } else {
         r.innerHTML = "Некорректный ввод данных";
