@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,21 +8,35 @@
     <script src="calculator.js" defer></script>
 </head>
 <body>
-    
     <form>
-        <p> Количество товара </p>
-        <input name="amounty" type="text">
-        <select name="select1">
-            <option value="chocolate">Шоколад молочный-80</option>
-            <option value="milk">Молоко-67</option>
-            <option value="bread">Хлеб-30</option>
-            <option value="juice">Сок-109</option>
-            <option value="tea">Чай-94</option>
+        <p> Количество товара: </p>
+        <input name="amount" type="number"> 
+        <br>
+
+        <p> Вид товара: </p>
+        <div id="myradios">
+            <label><input type="radio" name="pr" value="g_1" checked="checked"> Шоколад - 80 </label>
+            <label><input type="radio" name="pr" value="g_2"> Молоко - 67 </label>
+            <label><input type="radio" name="pr" value="g_3"> Хлеб - 30 </label>
+        </div> 
+        <br>
+         
+        <select name="g_options" id="goods_options">
+            <option value="option_1"> Без дополнительных опций </option>
+            <option value="option_2"> +10 </option>
+            <option value="option_3"> +5 </option>
         </select>
-        <!-- <button id="button1" onclick="return click1();">OK</button> -->
-        <button id="button1">OK</button>
-        <p> Стоимость: </p>
-        <div id="result"></div>
+        <br>
+
+        <div id="checkboxes">
+            <label><input type="checkbox" name="property_1" /> +1 </label>
+            <label><input type="checkbox" name="property_2" /> +2 </label>
+            <label><input type="checkbox" name="property_3" /> +3 </label>
+        </div>
+        <br>
+
     </form>
+
+    <div id="result">-Стоимость товара-</div>
 </body>
 </html>
