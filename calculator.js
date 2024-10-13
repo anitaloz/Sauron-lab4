@@ -4,8 +4,8 @@ function isNumber(value) {
 }
 
 function updatePrice() {
-    let fl1=0;
-    let fl2=0;
+    let fl1 = 0;
+    let fl2 = 0;
     let price = 0;
     let prices = getPrices();
     let checkDiv = document.getElementById("checkboxes");
@@ -23,14 +23,14 @@ function updatePrice() {
                 checkDiv.style.display = "none";
             } else {
                 checkDiv.style.display = "block";
-                fl1=1;
+                fl1 = 1;
             }
             //select
             if (radio.value === "g_1" || radio.value === "g_3") {
                 selectDiv.style.display = "none";
             } else {
                 selectDiv.style.display = "block";
-                fl2=1;
+                fl2 = 1;
             }
         }
     });
@@ -38,7 +38,7 @@ function updatePrice() {
     // Смотрим какая товарная опция выбрана.
     let s = document.getElementsByName("g_options");
     let select = s[0].value;
-    if (select !== undefined && fl2===1) {
+    if (select !== undefined && fl2 === 1) {
         price += prices.g_Options[select];
     }
 
@@ -47,7 +47,7 @@ function updatePrice() {
     checkboxes.forEach(function (checkbox) {
         if (checkbox.checked) {
             let g_Price = prices.g_Properties[checkbox.name];
-            if (g_Price !== undefined && fl1===1) {
+            if (g_Price !== undefined && fl1 === 1) {
                 price += g_Price;
             }
         }
@@ -58,10 +58,11 @@ function updatePrice() {
     //подсчет цены с учетом количества товара
     let g_amount = document.getElementsByName("amount");
     let m = g_amount[0].value;
-    if(isNumber(m)) {
-        res.innerHTML = m*price+" рублей";
+    if (isNumber(m)) {
+        res.innerHTML = m * price + " рублей";
+    } else {
+        res.innerHTML = "Некорректный ввод данных";
     }
-    else res.innerHTML="Некорректный ввод данных";
 }
 
 function getPrices() {
